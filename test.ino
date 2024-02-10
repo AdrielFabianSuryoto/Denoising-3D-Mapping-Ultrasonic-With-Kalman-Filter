@@ -36,10 +36,10 @@ void setup() {
 }
 
 void loop() {
- //moveServo();
-  servo2.write(100);
-  servo1.write(0);
-//  //ultraSonic();
+ moveServo();
+//   servo2.write(100);
+//   servo1.write(0);
+//ultraSonic();
 }
 
 void moveServo() {
