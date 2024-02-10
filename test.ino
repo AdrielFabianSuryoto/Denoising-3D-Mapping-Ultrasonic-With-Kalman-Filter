@@ -4,7 +4,7 @@ Servo servo1;
 Servo servo2;
 const int trigPin = 10;
 const int echoPin = 9;
-// Constrains
+
 const int maxdist = 335;
 const float mindist = 2.5;
 
