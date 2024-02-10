@@ -2,20 +2,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-data = [0,0,1,2,2,2,2,4] #servo 40 derajat
-data1 = [4,3,3,3,3,3,3,3,4] # 50 derajat
-data2 = [6,6,6,6,6,6,10,8,6] # 60 derajat
-data3 = [6,6,6,9,6,12,10,14,16] # 70 derajat
-data4 = [14,12,11,10,9,10,10,11,12] # 80 derajat
-data5 = [10,10,9,9,8,8,8,8,8] # 90 derajat
-data6 = [8,8,8,8,8,8,8,9,9] # 100 derajat
-data7 = [17,23,26,19,15,11,10,11,9] # 110 derajat
-data8 = [8,7,7,8,8,15,21,15,14] # 120 derajat
-data9 = [10,8,7,6,5,5,5,5,5] # 130 derajat
-data10 = [4,4,4,4,4,4,4,4,3] # 140 derajat
-data11 = [3,3,3,3,3,3,3,3,3] # 150 derajat
+data = [0,0,1,2,2,2,2,4] #servo1 40 degree
+data1 = [4,3,3,3,3,3,3,3,4] # 50 degree
+data2 = [6,6,6,6,6,6,10,8,6] # 60 degree
+data3 = [6,6,6,9,6,12,10,14,16] # 70 degree
+data4 = [14,12,11,10,9,10,10,11,12] # 80 degree
+data5 = [10,10,9,9,8,8,8,8,8] # 90 degree
+data6 = [8,8,8,8,8,8,8,9,9] # 100 degree
+data7 = [17,23,26,19,15,11,10,11,9] # 110 degree
+data8 = [8,7,7,8,8,15,21,15,14] # 120 degree
+data9 = [10,8,7,6,5,5,5,5,5] # 130 degree
+data10 = [4,4,4,4,4,4,4,4,3] # 140 degree
+data11 = [3,3,3,3,3,3,3,3,3] # 150 degree
 
-# Menghitung rata-rata
 rata_rata = sum(data) / len(data)
 rata_rata1 = sum(data1) / len(data1)
 rata_rata2 = sum(data2) / len(data2)
@@ -28,6 +27,7 @@ rata_rata6 = sum(data8) / len(data8)
 rata_rata9 = sum(data9) / len(data9)
 rata_rata10 = sum(data10) / len(data10)
 rata_rata11 = sum(data11) / len(data11)
+
 # Data
 data = [
     (0, 40, rata_rata), (5, 40, rata_rata), (10, 40, rata_rata), (15, 40, rata_rata), (20, 40, rata_rata), (25, 40, rata_rata), (30, 40, rata_rata), (35, 40, rata_rata),
@@ -68,6 +68,6 @@ ax.contour3D(X, Y, Z, 50, cmap='viridis')
 ax.set_xlabel('X-axis')
 ax.set_ylabel('Y-axis')
 ax.set_zlabel('Z-axis')
-ax.set_title('3D Contour Plot')
+ax.set_title('3D With Kalman Filter')
 
 plt.show()
