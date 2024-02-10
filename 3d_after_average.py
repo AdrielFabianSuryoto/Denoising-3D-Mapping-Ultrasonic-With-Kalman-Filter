@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-data = [0,0,1,2,2,2,2,4] #servo1 40 degree
+data = [0,0,1,2,2,2,2,4] #servo2 40 degree
 data1 = [4,3,3,3,3,3,3,3,4] # 50 degree
 data2 = [6,6,6,6,6,6,10,8,6] # 60 degree
 data3 = [6,6,6,9,6,12,10,14,16] # 70 degree
